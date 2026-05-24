@@ -444,7 +444,7 @@
 
     .pricing-index {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 14px;
       margin-bottom: 30px;
     }
@@ -504,6 +504,7 @@
       background: linear-gradient(135deg, var(--brown), var(--gold-dark));
       box-shadow: 0 12px 30px rgba(75,53,40,.22);
       font-weight: 900;
+      flex: 0 0 42px;
     }
 
     .category-heading h3 {
@@ -639,6 +640,10 @@
       border: 1px solid rgba(75,53,40,.1);
       border-radius: 20px;
       background: rgba(255,255,255,.45);
+    }
+
+    .price-panel + .price-panel {
+      margin-top: 12px;
     }
 
     .price-panel-title {
@@ -1205,7 +1210,7 @@
     <div class="nav-inner">
       <a href="#home" class="brand">
         <span class="brand-mark"><i class="fa-solid fa-spa"></i></span>
-        <span>Elite Massage SPA &Therapy</span>
+        <span>Elite Massage</span>
       </a>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
@@ -1332,7 +1337,7 @@
             <h2 class="section-title">Clear choices for every kind of relief.</h2>
             <p class="section-copy">
               Pricing is organized from complete spa combinations to individual massage sessions,
-              then couple appointments, so guests can compare options quickly and book with confidence.
+              then couple appointments and optional add-ons, so guests can compare options quickly.
             </p>
           </div>
 
@@ -1348,18 +1353,27 @@
             <h3>Signature Spa Combos</h3>
             <p>Best for guests who want scalp, body, and optional facial care in one appointment.</p>
           </div>
+
           <div class="index-card">
             <span>02</span>
             <h3>Individual Massage</h3>
             <p>Focused body or foot massage options for targeted relaxation and tension relief.</p>
           </div>
+
           <div class="index-card">
             <span>03</span>
             <h3>Couple Massage</h3>
             <p>A shared relaxation experience for two guests with simple duration-based pricing.</p>
           </div>
+
           <div class="index-card">
             <span>04</span>
+            <h3>Add-ons</h3>
+            <p>Enhance your session with fire cupping, body scrub, CBD oil, essential oil, or pain-relief oil.</p>
+          </div>
+
+          <div class="index-card">
+            <span>05</span>
             <h3>Included Benefit</h3>
             <p>Free hot stone is included with massage services for extra warmth and comfort.</p>
           </div>
@@ -1600,7 +1614,7 @@
                   </div>
                 </div>
 
-                <div class="price-panel" style="margin-top: 12px;">
+                <div class="price-panel">
                   <div class="price-panel-title">
                     <span>Body + Foot Combo</span>
                     <i class="fa-solid fa-plus"></i>
@@ -1678,41 +1692,107 @@
 
             <article class="service-card">
               <div class="service-media carousel" data-carousel>
-                <span class="service-badge"><i class="fa-solid fa-fire-flame-curved"></i> Included</span>
+                <span class="service-badge"><i class="fa-solid fa-plus"></i> Add-ons</span>
                 <img class="carousel-img active" src="https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg" alt="Relaxing massage setup">
                 <img class="carousel-img" src="https://i.pinimg.com/736x/4c/2b/cb/4c2bcb39fbc7189277e8e505c2e1bc8f.jpg" alt="Comfortable massage room">
                 <img class="carousel-img" src="https://i.pinimg.com/736x/21/8f/4c/218f4cd988ca278667bd28ff54a577ff.jpg" alt="Calm massage environment">
               </div>
+
               <div class="service-body">
                 <div class="service-topline">
-                  <h3 class="service-title">Included Benefit</h3>
-                  <span class="price-chip">$0 Add-On</span>
+                  <h3 class="service-title">Add-ons</h3>
+                  <span class="price-chip">From $10</span>
                 </div>
+
                 <p class="service-desc">
-                  Free hot stone is included with massage services, adding gentle warmth to help
-                  loosen tight areas and deepen your sense of relaxation.
+                  Enhance your massage with optional add-ons designed for deeper comfort, skin refreshment,
+                  muscle relief, and a more personalized spa experience.
                 </p>
 
                 <div class="price-panel">
                   <div class="price-panel-title">
-                    <span>Complimentary</span>
-                    <i class="fa-solid fa-gift"></i>
+                    <span>Optional Add-ons</span>
+                    <i class="fa-solid fa-circle-plus"></i>
                   </div>
+
                   <div class="price-table">
                     <div class="price-row highlight">
-                      <span>Free hot stone</span>
-                      <strong>Included</strong>
+                      <span>Fire Cupping</span>
+                      <strong>$20</strong>
                     </div>
+
                     <div class="price-row">
-                      <span>Available with massage services</span>
-                      <strong>$0</strong>
+                      <span>Body Scrub</span>
+                      <strong>$20</strong>
+                    </div>
+
+                    <div class="price-row highlight">
+                      <span>CBD Oil / Essential Oil</span>
+                      <strong>$10</strong>
+                    </div>
+
+                    <div class="price-row">
+                      <span>Pain-Relief Oil</span>
+                      <strong>$10</strong>
                     </div>
                   </div>
                 </div>
 
                 <div class="small-note">
                   <i class="fa-solid fa-circle-info"></i>
-                  <span>Please call ahead for availability and appointment timing.</span>
+                  <span>Add-ons are optional and can be requested when booking or before your session begins.</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="service-category reveal">
+          <div class="category-heading">
+            <div class="category-number">05</div>
+            <div>
+              <h3>Included Benefit</h3>
+              <p>Complimentary hot stone warmth is included with massage services.</p>
+            </div>
+          </div>
+
+          <div class="services-grid two">
+            <article class="service-card featured">
+              <div class="service-media carousel" data-carousel>
+                <span class="service-badge"><i class="fa-solid fa-fire-flame-curved"></i> Included</span>
+                <img class="carousel-img active" src="https://i.pinimg.com/1200x/dc/36/fe/dc36feaf9cc11bec29cc3de7834c539e.jpg" alt="Relaxing massage setup">
+                <img class="carousel-img" src="https://i.pinimg.com/736x/4c/2b/cb/4c2bcb39fbc7189277e8e505c2e1bc8f.jpg" alt="Comfortable massage room">
+                <img class="carousel-img" src="https://i.pinimg.com/736x/21/8f/4c/218f4cd988ca278667bd28ff54a577ff.jpg" alt="Calm massage environment">
+              </div>
+
+              <div class="service-body">
+                <div class="service-topline">
+                  <h3 class="service-title">Free Hot Stone</h3>
+                  <span class="price-chip">$0 Add-On</span>
+                </div>
+
+                <p class="service-desc">
+                  Free hot stone is included with massage services, adding gentle warmth to help loosen tight areas
+                  and deepen your sense of relaxation.
+                </p>
+
+                <div class="price-panel">
+                  <div class="price-panel-title">
+                    <span>Complimentary Benefit</span>
+                    <i class="fa-solid fa-gift"></i>
+                  </div>
+
+                  <div class="price-table">
+                    <div class="price-row highlight">
+                      <span>Free Hot Stone</span>
+                      <strong>Included</strong>
+                    </div>
+
+                    <div class="price-row">
+                      <span>Available with massage services</span>
+                      <strong>$0</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>
